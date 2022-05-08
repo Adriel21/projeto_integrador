@@ -1,0 +1,113 @@
+*,*::after, *::before {
+    box-sizing: border-box;
+}
+
+body, h1 {
+margin: 0; 
+padding: 0;
+}
+
+img {
+    max-width: 100%; /*Para responsividade das imagens*/
+}
+
+.navegacao {   /*Configuração do campo de navegação e logo*/
+    height: 12vh;
+    background-color: hsl(55, 85%, 59%, 85%);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*Configuração do mobile até 600px*/
+@media (max-width: 600px){
+.garotaLendo img {
+    width: 100%;
+}
+
+.garotaLendo {
+    position: relative; /*campo relacionado*/
+    gap: 5px;
+}
+
+.botaoUm{
+    position: absolute; /*Propriedade para movimentação dos botões pelo campo relacionado*/
+    top: 220px;
+    left: 5vw;
+}
+
+.botaoDois{
+    position: absolute;
+    top: 220px;
+    right: 5vw;
+}
+
+.conteudo {
+    height: 35vh;
+    background-color: #FBF6A2;
+    margin: 0 auto;
+    width: 85%;
+    border-radius: 40px;
+    position: relative;
+}
+
+.botao {
+    position: absolute;
+    top: 30vh;
+    left: 57vw;
+}
+
+.botao button {
+    background-color: #6734B6;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.conteudo h2 {
+    text-align: center;
+}
+
+
+
+}
+/*Fim da Media Querie do mobile*/
+
+/*Configurações gerais dos botões do início*/
+.botaoUm, .botaoDois {
+    background-color: #6734B6;
+    border-radius: 20px;
+    color: white;
+    font-size: 24px;
+    width: 30%;
+}
+/*Fim das configurações gerais*/
+
+footer {
+    height: 10vh;
+    background-color: hsl(55, 85%, 59%, 85%);
+    margin-top: 5vh;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+}
+
+footer p {
+    align-items: center;
+    margin: 0;
+    position: relative;
+    right: 30vw;
+}
+
+footer img {
+    width: 7vw;
+    margin-right: 5%;
+    position: relative;
+    left: 1vw;
+}
+
+
+
