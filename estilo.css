@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
 *,*::after, *::before {
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Yanone Kaffeesatz';
+}
 body, h1 {
 margin: 0; 
 padding: 0;
@@ -18,43 +23,54 @@ img {
     padding: 0;
 }
 
-
-
-
-/*Configuração do mobile até 600px*/
-@media (max-width: 600px){
-.garotaLendo img {
-    width: 100%;
+button a {
+    color: white;
+    text-decoration: none;
 }
 
+
+/* Início do layout mobile */
+@media (max-width: 600px){
+/* .garotaLendo img {
+    width: 100%;
+} */
+
 .garotaLendo {
-    position: relative; /*campo relacionado*/
+    /* position: relative; campo relacionado */
+    height: 100vh;
     gap: 5px;
+    background-image: url(imagens/fundo/Open\ Doodles_vetorizado\ [Recuperado].png);
+    /* background-attachment: fixed; */
+    background-position-x: center;
+    background-size: 100% 75vh;
+    background-repeat: no-repeat;
+
 }
 
 .botaoUm{
     position: absolute; /*Propriedade para movimentação dos botões pelo campo relacionado*/
-    top: 220px;
+    top: 300px;
     left: 5vw;
 }
 
 .botaoDois{
-    position: absolute;
-    top: 220px;
+    position: absolute; 
+    top: 300px;
     right: 5vw;
 }
 
 .conteudo {
-    height: 35vh;
+    height: 40vh;
     background-color: #FBF6A2;
     margin: 0 auto;
     width: 85%;
     border-radius: 40px;
     position: relative;
+    margin-top: -20vh;
 }
 
 .botao {
-    position: absolute;
+    position: absolute; 
     top: 30vh;
     left: 57vw;
 }
@@ -64,16 +80,36 @@ img {
     color: white;
     border-radius: 20px;
     font-size: 16px;
+    height: 6vh;
 }
 
 .conteudo h2 {
     text-align: center;
 }
 
+section h2 {
+    text-align: center;
+}
 
+.adriel-img{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.campoUm {
+    text-align: center;
+}
+
+.github-logo{
+    width: 22%;
+}
+
+.linkedin-logo{
+    width: 11%;
+}
 
 }
-/*Fim da Media Querie do mobile*/
+/* Fim layout mobile */
 
 /*Configurações gerais dos botões do início*/
 .botaoUm, .botaoDois {
@@ -110,4 +146,554 @@ footer img {
 }
 
 
+@media (min-width: 600px){
 
+    .garotaLendo {
+        height: 70vh;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 5px;
+        background-image: url(imagens/fundo/Open\ Doodles_vetorizado\ [Recuperado].png);
+        background-size: cover;
+        
+    }
+
+   
+
+}
+
+@media (max-width: 450px){
+
+    .garotaLendo{
+    /* position: relative; campo relacionado */
+    height: 55vh;
+    gap: 5px;
+    background-image: url(imagens/fundo/Open\ Doodles_vetorizado\ [Recuperado].png);
+    /* background-attachment: fixed; */
+    background-position-x: center;
+    background-size: 100% 40vh;
+    background-repeat: no-repeat;
+    }
+
+    .conteudo{
+        margin-top: -12vh;
+    }
+    .botaoUm{
+    position: absolute; /*Propriedade para movimentação dos botões pelo campo relacionado*/
+    top: 36.5vh;
+    left: 5vw;
+}
+
+.botaoDois{
+    position: absolute; 
+    top: 36.5vh;
+    right: 5vw;
+}
+
+
+    .botaoUm, .botaoDois{
+        margin-top: 5vh;
+        font-size: max(18px, 5vw);
+    }
+
+   .adriel-img{
+       width: 40%;
+       border-radius: 50%;
+   }
+
+   .campoUm {
+       text-align: center;
+   }
+
+   .github-logo{
+       width: 22%;
+   }
+
+   .linkedin-logo{
+       width: 11%;
+   }
+
+   .botaoUm, .botaoDois {
+    background-color: #6734B6;
+    border-radius: 20px;
+    color: white;
+    font-size: 24px;
+    width: 30%;
+}
+   
+
+}
+
+/* @media (min-width: 230px) and (max-width: 450px){
+
+    
+    .botaoUm{
+        position: absolute; /*Propriedade para movimentação dos botões pelo campo relacionado*/
+        /* top: 35vh; */
+        /* left: 5vw;
+    }
+    
+    .botaoDois{
+        position: absolute; 
+        top: 35vh;
+        right: 5vw;
+    }
+
+    .botaoUm, .botaoDois {
+        background-color: #6734B6;
+        border-radius: 20px;
+        color: white;
+        font-size: 18px;
+        width: 30%;
+    } */
+/* }  */
+
+
+
+/* Fim do CSS da tela principal */
+
+/* CSS da tela de login e cadastro */
+.header-login{
+    margin-bottom: 25px;
+}
+
+@media (max-width: 600px){ 
+.login-cadastro{
+    height: 73vh;
+    margin: 0 auto;
+    width: 85vw;
+    background-color: #FBF6A2;
+    border-radius: 25px;
+}
+
+.option{
+    text-align: center;
+}
+
+.forms-login{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.inputOne{
+    margin-bottom: 20px;
+    height: 25px;
+    background-color: #E9E9E9;
+}
+
+.inputTwo{
+    z-index: 1000;
+    position: relative;
+    height: 25px;
+    background-color: #E9E9E9;
+}
+
+.labelTwo{
+    position: relative;
+    z-index: 1000;
+}
+
+
+.forms-login button{
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    left: 64vw;
+    background-color: #6734B6;
+    border-radius: 20px;
+    color: white;
+    font-size: 22px;
+    width: 110px;
+    height: 40px;
+    position: absolute;
+}
+
+.imagem-login{
+    position: relative;
+    bottom: 40px;
+}
+}
+
+span a{
+    color: black;
+    text-decoration: none;
+}
+
+span a:hover{
+    color: rgb(106, 101, 101);
+    padding: 2px;
+}
+
+@media (min-width: 600px){
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .login-cadastro{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 65vh;
+        align-items: center;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario{
+        width: 40vw;
+        margin: 0 auto;
+        background-color: whitesmoke;
+    }
+    .input-container, h2{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+        font-weight: bold;
+        font-size: larger;
+    }
+    input{
+        width: 71%;
+    }
+    .botao-container{
+        margin-left: 55% !important;
+    }
+    button{
+        width: 14vw;
+        border-radius: 15px;
+        background-color: #6734B6;
+        color: white;
+        font-size: larger;
+    }
+}
+
+
+@media (max-width: 450px){
+    .login-cadastro{
+        height: 350px;
+        margin: 0 auto;
+        width: 85vw;
+        background-color: #FBF6A2;
+        border-radius: 25px;
+    }
+
+     .formulario h2{
+        position: relative;
+        top: 1vh;
+    }
+
+    div button{
+        z-index: 1000;
+    }
+
+    label:nth-child(1), input:nth-child(1){
+        z-index: 1000;
+    }
+}
+
+/* Fim do css da tela de login e cadastro */
+
+
+/* CSS da tela de confirmação de envio */
+@media (max-width: 600px) and (min-width:450px){
+    .confirmacao{
+        display: flex;
+        padding: 0;
+        position: relative;
+        top: 7vh;
+        font-size: 17px;
+        margin-left: 2%;
+        align-items: center;
+    }
+    
+    .confirmacao p{
+        width: 65%;
+        position: relative;
+    }
+    
+    .main-confirmacao { 
+    height: 72vh;
+    margin: 0 auto;
+    width: 85vw;
+    background-color: #FBF6A2;
+    border-radius: 25px;
+    }
+    
+    .button-confirmacao{
+        background-color: #6734B6;
+        border-radius: 15px;
+        width: 45%;
+        color: white;
+        height: 7%;
+        font-size: 20px;
+    }
+    
+    .ver-disponiveis {
+        text-align: center;
+        margin-top: 30px; 
+    }
+}
+@media (max-width:450px) {
+
+
+.confirmacao{
+    display: flex;
+    padding: 0;
+    position: relative;
+    top: 7vh;
+    font-size: 17px;
+    margin-left: 2%;
+}
+
+.confirmacao p{
+    width: 65%;
+    position: relative;
+    bottom: 5vh;
+}
+
+.main-confirmacao { 
+height: 40vh;
+margin: 0 auto;
+width: 85vw;
+background-color: #FBF6A2;
+border-radius: 25px;
+}
+
+.button-confirmacao{
+    background-color: #6734B6;
+    border-radius: 15px;
+    width: 45%;
+    color: white;
+    height: 5vh;
+    font-size: 18px;
+}
+
+.ver-disponiveis {
+    text-align: center;
+    margin-top: 30px;
+}
+
+}
+
+/* Fim do css de confirmação de envio */
+
+
+/* Início do css da tela de foto */
+.body-tela-foto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.main-tela-foto{
+   text-align: center;
+}
+
+
+.botoes-container{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    gap: 10px;
+}
+ .botao-tirar-foto, .botao-carregar{
+    border-radius: 20px;
+    background-color: #FBF6A2;
+    color: black;
+    font-size: 18px;
+    width: 100%;
+    height: 40px;
+}
+
+
+.enviar{
+    border-radius: 20px;
+    background-color: #6734B6;
+    color: white;
+    font-size: 18px;
+    width: 25%;
+    margin-top: 40px;
+    height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px){
+    
+   .div-forms-foto{
+        display:flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 40%;
+        text-align: center;
+    }
+    .forms-foto{
+        height: 69vh;
+        background-color: whitesmoke;
+        width: 60vw;
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+    
+    .titulo-livro-input{
+        border: none;
+        border-bottom: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        margin-bottom: 3%;
+        width: 50%
+    }
+    .descricao-livro-input, .categoria-livro-input{
+        width: 49%; 
+        text-align: center;  
+        margin-bottom: 3%;
+    
+    }
+    .textarea-container{
+        display: flex;
+        justify-content: center;
+        line-height: middle;
+    }
+
+    .botoes-container{
+        margin: 0 auto;
+        width: 80%; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .enviar{
+        border-radius: 20px;
+        background-color: #6734B6;
+        color: white;
+        font-size: 18px;
+        width: 35vw;
+        margin-top: 0px;
+        height: 35px;
+        height: 40px;
+    }
+
+    .enviarr{
+        display: none;
+    }
+    
+}
+/* 
+@media (max-width: 450px){
+    .enviar{
+        display: none;
+    }
+
+    .enviarr{
+        border-radius: 20px;
+        background-color: #6734B6;
+        color: white;
+        font-size: 18px;
+        width: 35%;
+        margin-top: 40px;
+        height: 45px;
+        position: relative;
+    }
+
+    .imagem_vazia{
+        width: 50vw;
+    }
+
+    .titulo-container, .categoria-container, .textarea-container{
+       margin-bottom: 6%;
+    }
+    
+    .categoria-livro-input, .titulo-livro-input{
+        width: 49%; 
+        height: 35px; 
+        margin-bottom: 3%;
+    }
+
+ 
+
+    .botoes-container{
+      position: relative;
+      left: 7px;
+    }
+
+    .botao-retorno{
+        position: relative;
+        left: 3%;
+        top: 10px;
+        font-size: 22px;
+        background-color: #6734B6;
+        width: 22%;
+        border-radius: 15px;
+        text-align: center;
+    }
+.botao-retorno a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+} */
+
+@media (max-width: 600px){
+    .enviar{
+        display: none;
+    }
+
+    .enviarr{
+        border-radius: 20px;
+        background-color: #6734B6;
+        color: white;
+        font-size: 18px;
+        width: 35%;
+        margin-top: 40px;
+        height: 45px;
+        position: relative;
+    }
+
+    .imagem_vazia{
+        width: 50vw;
+    }
+
+    .titulo-container, .categoria-container, .textarea-container{
+       margin-bottom: 6%;
+    }
+    
+    .categoria-livro-input, .titulo-livro-input{
+        width: 49%; 
+        height: 35px; 
+        margin-bottom: 3%;
+    }
+
+    .categoria-livro-input{
+        margin-right: 6vw;
+    }
+
+    .botoes-container{
+      position: relative;
+      left: 7px;
+    }
+
+    .botao-retorno{
+        position: relative;
+        left: 3%;
+        top: 10px;
+        font-size: 22px;
+        background-color: #6734B6;
+        width: 22%;
+        border-radius: 15px;
+        text-align: center;
+    }
+.botao-retorno a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+}
+
+/* Fim do css da tela de foto */
