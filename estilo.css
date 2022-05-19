@@ -160,6 +160,31 @@ footer img {
         
     }
 
+    .links-help{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .links-help a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .links-help a:hover{
+        color: rgba(27, 27, 27, 0.733);
+    }
+
+    ::placeholder{
+        background-color: #FBF6A2;
+        margin: 0;
+        padding: 0;
+    }
+
    
 
 }
@@ -327,9 +352,7 @@ span a:hover{
 }
 
 @media (min-width: 600px){
-    body{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+ 
     .login-cadastro{
         display: flex;
         flex-direction: row-reverse;
@@ -356,15 +379,15 @@ span a:hover{
         width: 71%;
     }
     .botao-container{
-        margin-left: 55% !important;
+        margin-left: 63% !important;
     }
     button{
-        width: 14vw;
-        border-radius: 15px;
+        width: 10vw;
         background-color: #6734B6;
         color: white;
         font-size: larger;
     }
+
 }
 
 
